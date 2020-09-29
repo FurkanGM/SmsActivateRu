@@ -1,0 +1,22 @@
+{
+  "name": "furkangm/sms-activate-ru",
+  "description": "Simple sms api class for sms-activate.ru",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "FurkanGM",
+      "email": "furkangezek2014@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "SmsActivateRu\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "guzzlehttp/guzzle": "^6.0.0"
+  }
+}

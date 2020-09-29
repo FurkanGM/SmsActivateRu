@@ -1,12 +1,26 @@
 # **SMS-Activate.ru Api Class**
 
-Example:
+**Installation**
+
+Download and include the SmsActivator class
+```php
+require_once 'path/to/SmsActivator.php';
+```
+Or install via Compsoer
+```textmate
+composer require furkangm/sms-activate-ru
+```
+
+**Usage**
 
 ```php
 use SmsActivateRu\SmsActivator;
 
 $smsActivator = new SmsActivator('8A0e0fc3549878Aec24fe6A548130204');
-echo $smsActivator->getPrices(['service' => 'mt', 'country' => 62]) . PHP_EOL;
-echo $smsActivator->getBalance() . PHP_EOL;
-echo $smsActivator->getNumber();
+```
+
+This class works using action names at https://sms-activate.ru/en/api2. For example get account balance
+
+```php
+echo $smsActivator->getBalance();
 ```
